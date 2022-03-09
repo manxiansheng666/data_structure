@@ -1,3 +1,0 @@
-﻿  main.c
-C:\Users\sqd\Desktop\C\test\find\main.c(83,18): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  find.vcxproj -> C:\Users\sqd\Desktop\C\test\find\Debug\find.exe
