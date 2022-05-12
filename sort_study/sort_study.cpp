@@ -49,6 +49,8 @@ void insert_sorting(int array[], int num)
 				array[j - 1] = array[j];
 				array[j] = buf;
 			}
+			else
+				break;
 		}
 	}
 }
