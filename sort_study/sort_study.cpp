@@ -74,8 +74,8 @@ void shell_sroting(vector<int>& array)
 		for (int i = 0; i < array.size() - 1; i++)
 			for (int j = i + gap; j > 0; j -= gap)
 			{
-				if (array[j - 1] > array[j])
-					swap(array[j - 1], array[j]);
+				if (array[j - gap] > array[j])
+					swap(array[j - gap], array[j]);
 				else
 					break;
 			}
