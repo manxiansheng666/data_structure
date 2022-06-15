@@ -65,24 +65,21 @@ void display_array(int array[], int num)
 }
 
 //希尔排序
-void shell_sorting(int array[], int num)
+void shell_sroting(vector<int>& array)
 {
-	for (int gap = 3; gap > 0; gap--)
+	int gap = array.size();
+	do
 	{
-		for (int i = gap; i < num; i += gap)
-		{
-			for (int j = i; j > 0; j -= gap)
+		gap = gap / 3 + 1;
+		for (int i = 0; i < array.size() - 1; i++)
+			for (int j = i + gap; j > 0; j -= gap)
 			{
-				if (array[j - gap] > array[j])
-				{
-					int buf = array[j - gap];
-					array[j - gap] = array[j];
-					array[j] = buf;
-				}
+				if (array[j - 1] > array[j])
+					swap(array[j - 1], array[j]);
+				else
+					break;
 			}
-		}
-
-	}
+	} while (gap > 1);
 }
 
 void swap(int array[], int i, int j)
