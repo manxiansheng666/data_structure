@@ -84,6 +84,7 @@ void shell_sroting(vector<int>& array)
     } while (gap > 1);
 }
 
+
 void swap(int array[], int i, int j)
 {
 	int temp = array[i];
